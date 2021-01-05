@@ -121,7 +121,7 @@
 ### 🔐Login
 * RSA Encryption
   암호화 방식에는 [RSA함호화 방식](https://namu.wiki/w/RSA%20%EC%95%94%ED%98%B8%ED%99%94)을 사용하였다.  
-  <a href="#"><img src="https://github.com/SE-LAB-IDE/WEBCOMPILER-WEB/tree/master/FILE\RSA.png"></a>  
+![RSA](https://user-images.githubusercontent.com/67648064/103686081-9d416580-4fd1-11eb-9006-cba38255b9f3.png) 
   1. login page로 이동 전 loginFormServlet으로 이동하여 개인키와 공개키를 생성하고 개인키는 세션에 저장, 공개키는 RSA library로 넘겨준 후 login page로 이동한다.  
   2. 로그인을 시도하면 RSA library는 id와 pw를 가로챈 후 공개키로 암호화 하여 화면에 나타나지 않는 form 태그를 이용하여 암호화된 id와 pw를 전송한다.
   3. 서버에서는 암호화된 id와 pw를 세션값에 저장된 개인키를 이용하여 복호화 한다. 이후 로그인을 진행하여 결과를 되돌려 준다.
